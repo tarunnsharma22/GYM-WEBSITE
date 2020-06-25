@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARRY FITNESS</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS RESET */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gymimage.jpg');
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        font-size: 17px;
+
+
+    }
+
+    .middle {
+        /* border: 2px solid blue; */
+        display: block;
+        width: 38%;
+        margin: 29px auto;
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid gold; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+
+    .navbar li a {
+        color: white;
+        display: inline-block;
+        padding: 19px 14px;
+        text-decoration: none;
+        font-style: initial;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .left img {
+        width: 134px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        margin: 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(55, 0, 255);
+    }
+
+    .container {
+        border: 2px solid white;
+        padding:81px 40px;
+        margin: 100px 9px;
+        width: 33%;
+        border-radius: 10px;
+        height: 200px;
+        background: black;
+    }
+
+    .form-group input {
+
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 7px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 102%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>TARUN FITNESS</div>
+
+
+
+        </div>
+        <!-- middle box for navigation -->
+        <div class="middle">
+            <ul class="navbar">
+                <li> <a href="#">HOME</a> </li>
+                <li> <a href="#">ABOUT US</a></li>
+                <li> <a href="#">FITNESS CALCULATOR</a></li>
+                <li> <a href="#">CONTACT US
+                    </a></li>
+            </ul>
+
+
+        </div>
+        <!-- right box for search -->
+        <div class="right">
+            <button class="btn">CALL US NOW</button>
+            <button class="btn">EMAIL US NOW</button>
+
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE BEST GYM OF KANPUR NOW</h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text " name="" placeholder="ENTER YOUR NAME">
+            </div>
+            <div class="form-group">
+                <input type="text " name="" placeholder="ENTER YOUR AGE">
+            </div>
+            <div class="form-group">
+                <input type="text " name="" placeholder="ENTER YOUR GENDER">
+            </div>
+            <div class="form-group">
+                <input type="text " name="" placeholder="ENTER YOUR LOCALITY">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
